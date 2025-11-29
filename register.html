@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Willify Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-container">
+          <h1>Willify</h1>
+          <nav>
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="songs.html">Songs</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Your main content goes here -->
+        <div class="register-square">
+          <img src="DarkBlueBlackGradient.jpg".jpg" alt="Image"
+          class="register-square-image">
+          <div class="register-text">Register to Willify</div>
+        </div>
+        <div class="-register-image-text-container">
+          <div class="register-info">
+            <p>
+              Experience the ultimate music streaming platform. Sign up now and
+              start your musical journey with Willify!
+            </p>
+          </div>
+          <img
+            src="TheWeekndBackground.jpg"
+            alt="Homepage Image"
+            class="registerpage-image"
+          />
+        </div>
+        <div class="register-background">
+          <video autoplay muted loop id="bg-video">
+            <source src="Brent Faiyaz - Been Away (Audio).mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="container-register">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+              <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" />
+              <div class="error-message" id="passwordError"></div>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" />
+              <div class="error-message" id="ageError"></div>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male" id="maleOption">Male</option>
+                <option value="female" id="femaleOption">Female</option>
+              </select>
+              <div class="error-message" id="genderError"></div>
+            </div>
+            <button type="button" onclick="validateForm()">Register</button>
+            <div class="success-message" id="successMessage"></div>
+          </form>
+        </div>
+        <script src="script.js"></script>
+      </main>
+    </div>
+
+    <footer class="footer-register">
+      <p>
+        &copy; 2024 Willify. All rights reserved. Designed by Muhammad Ribhi
+        Ramadan
+      </p>
+    </footer>
+  </body>
+</html>
